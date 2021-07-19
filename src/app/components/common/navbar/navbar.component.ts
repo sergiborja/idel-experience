@@ -1,25 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from "@angular/core";
+import { ViewportScroller } from "@angular/common";
 
 @Component({
-    selector: 'app-navbar',
-    templateUrl: './navbar.component.html',
-    styleUrls: ['./navbar.component.scss']
+    selector: "app-navbar",
+    templateUrl: "./navbar.component.html",
+    styleUrls: ["./navbar.component.scss"],
 })
 export class NavbarComponent implements OnInit {
-
     constructor(private viewportScroller: ViewportScroller) {}
 
-    public onClick(elementId: string): void { 
+    public index = [
+        { text: "Inicio", anchor: "home" },
+        { text: "Descúbrenos", anchor: "about" },
+        { text: "Experiencias", anchor: "blog" },
+        { text: "¿Quiénes somos?", anchor: "who" },
+        { text: "Contacto", anchor: "contact" },
+    ];
+
+    public onClick(elementId: string): void {
         this.viewportScroller.scrollToAnchor(elementId);
     }
 
-    ngOnInit() {
-    }
+    ngOnInit() {}
 
     classApplied = false;
     toggleClass() {
         this.classApplied = !this.classApplied;
     }
-
 }

@@ -5,7 +5,7 @@ Default CSS
 ==============================*/
 :root {
     --fontFamily: "Poppins", sans-serif;
-    --mainColor: #ff2c57;
+    --mainColor: #22a259;
     --whiteColor: #ffffff;
     --blackColor: #000000;
     --transition: 0.5s;
@@ -372,7 +372,6 @@ Main Header CSS
 .navbar-light {
     .navbar-brand {
         color: var(--whiteColor);
-        text-transform: uppercase;
         line-height: 10px;
         transition: var(--transition);
         font: {
@@ -382,7 +381,6 @@ Main Header CSS
         span {
             color: var(--mainColor);
             line-height: 10px;
-            text-transform: lowercase;
             transition: var(--transition);
             font: {
                 size: 40px;
@@ -2281,7 +2279,7 @@ FAQ Area CSS
                     position: absolute;
                     transform: translateY(-50%);
                     font: {
-                        family: Font Awesome\5 Free;
+                        family: Font awesome\5 Free;
                         weight: 900;
                     }
                 }

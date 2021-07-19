@@ -6,7 +6,12 @@
     ngStickyNav
 >
     <div class="container">
-        <a class="navbar-brand" routerLink="/"><span>X</span>avro</a>
+        <a class="navbar-brand" routerLink="/"
+            ><img
+                class="logo"
+                src="../../../../assets/img/IDEAL_EXPERIENCE_LOGO.png"
+                alt="Ideal Experience logo"
+        /></a>
         <button class="navbar-toggler" type="button" (click)="toggleClass()">
             <span class="burger-menu">
                 <span class="top-bar"></span>
@@ -16,98 +21,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('home')"
-                        >Inicio</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('about')"
-                        >About</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('team')">Team</span>
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('services')"
-                        >Services</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('work')">Work</span>
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('pricing')"
-                        >Pricing</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('blog')">Blog</span>
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link" (click)="onClick('contact')"
-                        >Contact</span
-                    >
-                </li>
+                <ng-container *ngFor="let item of index">
+                    <li class="nav-item">
+                        <span class="nav-link" (click)="onClick(item.anchor)">{{
+                            item.text
+                        }}</span>
+                    </li>
+                </ng-container>
             </ul>
+
             <ul class="navbar-nav ml-auto for-responsive">
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('home')"
-                        >Inicio</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('about')"
-                        >About</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('team')"
-                        >Team</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('services')"
-                        >Services</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('work')"
-                        >Work</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('pricing')"
-                        >Pricing</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('blog')"
-                        >Blog</span
-                    >
-                </li>
-                <li class="nav-item">
-                    <span
-                        class="nav-link"
-                        (click)="toggleClass(); onClick('contact')"
-                        >Contact</span
-                    >
-                </li>
+                <ng-container *ngFor="let item of index">
+                    <li class="nav-item">
+                        <span class="nav-link" (click)="onClick(item.anchor)">{{
+                            item.text
+                        }}</span>
+                    </li>
+                </ng-container>
             </ul>
         </div>
     </div>
