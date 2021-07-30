@@ -13,7 +13,6 @@ export class NavbarComponent implements OnInit {
         { text: "Inicio", anchor: "home" },
         { text: "Descúbrenos", anchor: "about" },
         { text: "Experiencias", anchor: "blog" },
-        { text: "¿Quiénes somos?", anchor: "who" },
         { text: "Contacto", anchor: "contact" },
     ];
 
