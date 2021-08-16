@@ -1,150 +1,371 @@
-<div class="page-title-area item-bg-two">
-    <div class="d-table">
-        <div class="d-table-cell">
-            <div class="container">
-                <div class="page-title-content">
-                    <h1>Single Post</h1>
-                    <ul>
-                        <li><a routerLink="/">Home</a></li>
-                        <li><i class="fas fa-chevron-right"></i></li>
-                        <li class="active">Blog</li>
-                    </ul>
+<ng-container *ngIf="expKey === 'london'">
+    <div class="page-title-area item-bg-two">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="page-title-content">
+                        <h1>London Experience</h1>
+                        <ul>
+                            <li><a routerLink="/">Experiencias</a></li>
+                            <li><i class="fas fa-chevron-right"></i></li>
+                            <li class="active">LONDON</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="blog-details-area ptb-100">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12">
-                <div class="blog-details">
-                    <div class="article-img">
-                        <img src="assets/img/blog-details.jpg" alt="blog-details">
-                        <div class="date">20 <br> Dec</div>
-                    </div>
-                    <div class="article-text">
-                        <ul class="category">
-                            <li><a routerLink="/">IT</a></li>
-                            <li><a routerLink="/">Mobile</a></li>
-                            <li><a routerLink="/">Marketing</a></li>
-                            <li><a routerLink="/">Design</a></li>
-                            <li><a routerLink="/">Development</a></li>
-                        </ul>
-                        <h4 class="title">How to Be a Work From Home Professional</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In necessitatibus provident facere, reiciendis voluptate dolorem iste consectetur veniam aperiam suscipit ad ipsum et labore a repellendus debitis explicabo quisquam obcaecati....</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eum alias debitis suscipit, sint dignissimos minus quisquam recusandae nostrum quas eligendi odit, fugiat eius rem. Cumque, labore placeat! Velit, vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, iste? Aut ipsam consequuntur non rem tenetur dolore consequatur ducimus a labore excepturi quae nisi, quisquam, maxime voluptates magnam aliquid. Cupiditate!</p>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, iste? Aut ipsam consequuntur non rem tenetur dolore consequatur ducimus a labore excepturi quae nisi, quisquam, maxime voluptates magnam aliquid. Cupiditate!</p>
-                        <blockquote class="blockquote">
-                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, iste? Aut ipsam consequuntur non rem tenetur dolore consequatur ducimus a labore excepturi quae nisi, quisquam, maxime voluptates magnam aliquid. Cupiditate.</p>
-                        </blockquote>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eum alias debitis suscipit, sint dignissimos minus quisquam recusandae nostrum quas eligendi odit, fugiat eius rem. Cumque, labore placeat! Velit, vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, iste? Aut ipsam consequuntur non rem tenetur dolore consequatur ducimus a labore excepturi quae nisi, quisquam, maxime voluptates magnam aliquid. Cupiditate!</p>
-                        <div class="author-share">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="article-author">
-                                        <div class="author-img">
-                                            <img src="assets/img/client-avatar1.jpg" alt="client">
-                                        </div>
-                                        <div class="author-title">
-                                            <h4>John Smith</h4>
-                                            <span>Back-End Developer</span>
+    <div class="blog-details-area ptb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="blog-details">
+                        <div class="article-img">
+                            <img
+                                src="assets/img/mini_cooper.webp"
+                                alt="blog-details"
+                            />
+                        </div>
+                        <div class="article-text">
+                            <ul class="category">
+                                <li><a routerLink="/">Mini Cooper</a></li>
+                                <li><a routerLink="/">London</a></li>
+                                <li><a routerLink="/">Old School</a></li>
+                                <li><a routerLink="/">Tour</a></li>
+                                <li><a routerLink="/">Top</a></li>
+                            </ul>
+                            <h4 class="title">
+                                Cómo disfrutar un viaje a Londres de la Mejor
+                                manera
+                            </h4>
+                            <p>
+                                Londres es una de esas ciudades que se pueden
+                                visitar varias veces, pues al ser una ciudad
+                                cosmpolita, va cambiando constantmente. Sus
+                                exposiciones, restaurantes, musicales, tiendas,
+                                mercadillos, etc, siempre hay algo nuevo que
+                                descubrir.
+                            </p>
+                            <p>
+                                En IDEAL EXPERIENCE, te ofrecemos una manera de
+                                lo más original de recorrer Londres. Súbete a un
+                                Classic Mini Cooper, coche british por
+                                excelencia, y déjate guiar por un chofer
+                                privado, que sabrá moverse por las complicadas
+                                calles y sus direcciones y la vez explicarte mil
+                                historias y anécdotas. La idea es que te sientas
+                                tan británico como cualquier otro local, gracias
+                                a la inmersión que harás de la ciudad.
+                            </p>
+                            <p>
+                                Podrás elegir entre varios y muy diferentes
+                                recorridos.
+                            </p>
+                            <p>
+                                El clásico, donde verás todos los lugares
+                                emblemáticos de la ciudad británica milenaria,
+                                recorrer callejuelas extravagantes de Covent
+                                Garden, ir a diferentes mercadillos y markets
+                                como Borough.
+                            </p>
+                            <p>
+                                Si eres fan de Harry Potter estás de suerte,
+                                pues verás Londres disfrutando de un maravilloso
+                                mundo de magia. ¡Y no te lo pierdas! Si quieres
+                                podrás vestirte de tu personaje favorito durante
+                                el trayecto.
+                            </p>
+                            <p>
+                                También los Beatles están presentes si lo
+                                prefieres, los “Fab Four”; Paul, George, John y
+                                Ringo. Podrás ver y fotografiar todos los
+                                lugares que frecuentaba la banda de rock
+                                británica de la década de los 60.
+                            </p>
+                            <p>
+                                Si visitas Londres en Navidad, el tour de luces
+                                navideñas será la mejor opción.
+                            </p>
+                            <p>
+                                Tienes una ruta gastronómica e incluso una
+                                dedicada al Gin, diversión asegurada.
+                            </p>
+                            <p>
+                                Y como no, los más peques de la casa tendrán su
+                                gran experiencia, donde conocerán la capital
+                                británica a través de un cuento, en los que
+                                Baddington y Pepa Pig, serán algunos de los
+                                protagonistas. Todo lo que vean a través de la
+                                ventana del Mini Cooper clásico, lo verán en su
+                                cuento.
+                            </p>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">
+                                    Dinos que te gustaría ver o descubrir y
+                                    nosotros te aconsejamos que tour elegir, la
+                                    aventura, creenos, está asegurada.
+                                </p>
+                            </blockquote>
+                            <div class="author-share">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="article-author">
+                                            <div class="author-img">
+                                                <img
+                                                    src="assets/img/client-avatar1.jpg"
+                                                    alt="client"
+                                                />
+                                            </div>
+                                            <div class="author-title">
+                                                <h4>Sandra Flores Bernes</h4>
+                                                <span
+                                                    >Fundadora de Ideal
+                                                    Experience Consulting</span
+                                                >
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="social-share">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    tooltip="Share on Facebook"
+                                                    ><i
+                                                        class="
+                                                            fab
+                                                            fa-facebook-f
+                                                        "
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    target="_blank"
+                                                    tooltip="Share on Twitter"
+                                                    ><i
+                                                        class="fab fa-twitter"
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    target="_blank"
+                                                    tooltip="Share on Linkedin"
+                                                    ><i
+                                                        class="
+                                                            fab
+                                                            fa-linkedin-in
+                                                        "
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    target="_blank"
+                                                    tooltip="Share on Instagram"
+                                                    ><i
+                                                        class="fab fa-instagram"
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <ul class="social-share">
-                                        <li><a href="#" tooltip="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" target="_blank" tooltip="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#" target="_blank" tooltip="Share on Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" target="_blank" tooltip="Share on Instagram"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#" target="_blank" tooltip="Share on Vimeo"><i class="fab fa-vimeo-v"></i></a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="post-controls-buttons">
-                    <div class="controls-left">
-                        <a routerLink="/blog-details"><i class="fas fa-chevron-left"></i> Prev Post</a>
-                    </div>
-                    <div class="controls-right">
-                        <a routerLink="/blog-details">Next Post <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="post-comments">
-                    <h3 class="title mt-0">Comments</h3>
-                    <div class="single-comment">
-                        <div class="comment-img">
-                            <img src="assets/img/client-avatar2.jpg" alt="client">
-                        </div>
-                        <div class="comment-content">
-                            <h4>David Warner</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus, saepe porro a voluptatem, quidem aut libero consequatur unde molestiae quae impedit accusantium dolor est corporis! Dolores ut dignissimos doloribus?</p>
-                            <span>Dec 19, 2018 - 9:10AM</span>
-                            <a routerLink="/blog-details">Reply</a>
-                        </div>
-                    </div>
-                    <div class="single-comment left-m">
-                        <div class="comment-img">
-                            <img src="assets/img/client-avatar1.jpg" alt="client">
-                        </div>
-                        <div class="comment-content">
-                            <h4>Eva Amith</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus, saepe porro a voluptatem, quidem aut libero consequatur unde molestiae quae impedit accusantium dolor est corporis! Dolores ut dignissimos doloribus?</p>
-                            <span>Dec 19, 2018 - 9:10AM</span>
-                            <a routerLink="/blog-details">Reply</a>
-                        </div>
-                    </div>
-                    <div class="single-comment">
-                        <div class="comment-img">
-                            <img src="assets/img/client-avatar3.jpg" alt="client">
-                        </div>
-                        <div class="comment-content">
-                            <h4>James Andy</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus, saepe porro a voluptatem, quidem aut libero consequatur unde molestiae quae impedit accusantium dolor est corporis! Dolores ut dignissimos doloribus?</p>
-                            <span>Dec 19, 2018 - 9:10AM</span>
-                            <a routerLink="/blog-details">Reply</a>
-                        </div>
-                    </div>
-                    <div class="single-comment mb-0">
-                        <div class="comment-img">
-                            <img src="assets/img/client-avatar2.jpg" alt="client">
-                        </div>
-                        <div class="comment-content">
-                            <h4>Audy Kanna</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus, saepe porro a voluptatem, quidem aut libero consequatur unde molestiae quae impedit accusantium dolor est corporis! Dolores ut dignissimos doloribus?</p>
-                            <span>Dec 19, 2018 - 9:10AM</span>
-                            <a routerLink="/blog-details">Reply</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="leave-a-reply">
-                    <h3 class="title mt-0">Leave a Reply</h3>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Full Name">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" placeholder="E-Mail">
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                                <textarea name="comment" cols="30" rows="5" class="form-control" placeholder="Your Comment"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="post-controls-buttons">
+                        <div
+                            (click)="changeExp('trees')"
+                            class="controls-right"
+                        >
+                            <a routerLink="/blog-details/trees"
+                                >Siguiente experiencia
+                                <i class="fas fa-chevron-right"></i
+                            ></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</ng-container>
+
+<ng-container *ngIf="expKey === 'trees'">
+    <div class="page-title-area item-bg-one">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="page-title-content">
+                        <h1>Durmiendo entre Árboles</h1>
+                        <ul>
+                            <li><a routerLink="/">Experiencias</a></li>
+                            <li><i class="fas fa-chevron-right"></i></li>
+                            <li class="active">ENTRE ÁRBOLES</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-details-area ptb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="blog-details">
+                        <div class="article-img">
+                            <img
+                                src="assets/img/cabana_arbol.jpeg"
+                                alt="blog-details"
+                            />
+                        </div>
+                        <div class="article-text">
+                            <ul class="category">
+                                <li><a routerLink="/">Cabañas</a></li>
+                                <li><a routerLink="/">Bosque</a></li>
+                                <li><a routerLink="/">Árboles</a></li>
+                                <li><a routerLink="/">Lujo</a></li>
+                                <li><a routerLink="/">Aventura</a></li>
+                            </ul>
+                            <h4 class="title">
+                                ¿Cuántas veces de niño has soñado en dormir en
+                                una cabaña encima de un árbol?
+                            </h4>
+                            <p>
+                                Aunque seguramente, la cabaña de tu infancia,
+                                dista “un poco” de la que en IDEAL EXPERIENCE te
+                                proponemos. Puede parecer un poco sorprendente,
+                                el hecho de dormir en un árbol, e incluso
+                                podrías pensar que es incómodo. Pero, créenos,
+                                nada más lejos de la realidad.
+                            </p>
+                            <p>
+                                En la verde y bella Galicia, donde abundan los
+                                bosques frondosos, se ubican 9 cabañas de
+                                madera, con todas las comodidades. Para que
+                                dormir entre carballos centenarios sea una
+                                experiencia absolutamente única y diferente, que
+                                seguro repetirás, una vez lo hayas probado.
+                            </p>
+                            <p>
+                                Déjate sorprender por la naturaleza, el
+                                despertar de los pájaros, con la mirada puesta
+                                en la desembocadura del río Tambre, los montes
+                                del Barbanza y el nacimiento de la ría Muros
+                                Noia.
+                            </p>
+                            <p>
+                                El clásico, donde verás todos los lugares
+                                emblemáticos de la ciudad británica milenaria,
+                                recorrer callejuelas extravagantes de Covent
+                                Garden, ir a diferentes mercadillos y markets
+                                como Borough.
+                            </p>
+                            <p>
+                                El entorno y enclave es espectacular. Si lo que
+                                quieres es escapar de la rutina, desconectar,
+                                disfrutar de la naturaleza y cargar pilas, es
+                                sin duda, la opción perfecta e ideal para ti y
+                                los tuyos.
+                            </p>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">
+                                    Desayunas en la misma cabaña para así
+                                    disfrutar de esta experiencia, que estamos
+                                    seguros, repetirás.
+                                </p>
+                            </blockquote>
+                            <div class="author-share">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="article-author">
+                                            <div class="author-img">
+                                                <img
+                                                    src="assets/img/client-avatar1.jpg"
+                                                    alt="client"
+                                                />
+                                            </div>
+                                            <div class="author-title">
+                                                <h4>Sandra Flores Bernes</h4>
+                                                <span
+                                                    >Fundadora de Ideal
+                                                    Experience Consulting</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="social-share">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    tooltip="Share on Facebook"
+                                                    ><i
+                                                        class="
+                                                            fab
+                                                            fa-facebook-f
+                                                        "
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    target="_blank"
+                                                    tooltip="Share on Twitter"
+                                                    ><i
+                                                        class="fab fa-twitter"
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    target="_blank"
+                                                    tooltip="Share on Linkedin"
+                                                    ><i
+                                                        class="
+                                                            fab
+                                                            fa-linkedin-in
+                                                        "
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    target="_blank"
+                                                    tooltip="Share on Instagram"
+                                                    ><i
+                                                        class="fab fa-instagram"
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-controls-buttons">
+                        <div
+                            (click)="changeExp('london')"
+                            class="controls-right"
+                        >
+                            <a routerLink="/blog-details/london"
+                                >Siguiente experiencia
+                                <i class="fas fa-chevron-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

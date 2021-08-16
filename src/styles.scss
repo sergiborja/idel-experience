@@ -592,13 +592,10 @@ Main Banner CSS
     }
 }
 .item-bg-one {
-    background-image: url(assets/img/main-bg-1.jpg);
+    background-image: url(assets/img/entre_arboles_wall.jpeg);
 }
 .item-bg-two {
-    background-image: url(assets/img/main-bg-2.jpg);
-}
-.item-bg-three {
-    background-image: url(assets/img/main-bg-3.jpg);
+    background-image: url(assets/img/ldn_overview.jpeg);
 }
 .main-banner-text {
     position: relative;
@@ -1118,7 +1115,7 @@ Who We Are Area CSS
     position: relative;
     z-index: 1;
     background: {
-        image: url(assets/img/bg2.jpg);
+        image: url(assets/img/mini_cooper.webp);
         position: center center;
     }
 }
@@ -2538,31 +2535,10 @@ Blog Area CSS
         border-radius: 50% 0 0 0;
     }
     &.bg1 {
-        background-image: url(assets/img/blog-img1.jpg);
+        background-image: url(assets/img/entre_arboles_wall.jpeg);
     }
     &.bg2 {
-        background-image: url(assets/img/blog-img2.jpg);
-    }
-    &.bg3 {
-        background-image: url(assets/img/blog-img3.jpg);
-    }
-    &.bg4 {
-        background-image: url(assets/img/blog-img4.jpg);
-    }
-    &.bg5 {
-        background-image: url(assets/img/blog-img5.jpg);
-    }
-    &.bg6 {
-        background-image: url(assets/img/blog-img6.jpg);
-    }
-    &.bg7 {
-        background-image: url(assets/img/blog-img7.jpg);
-    }
-    &.bg8 {
-        background-image: url(assets/img/blog-img8.jpg);
-    }
-    &.bg9 {
-        background-image: url(assets/img/blog-img9.jpg);
+        background-image: url(assets/img/ldn_overview.jpeg);
     }
     &:hover {
         &::before {

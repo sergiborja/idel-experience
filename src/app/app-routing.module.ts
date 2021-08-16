@@ -17,22 +17,22 @@ import { BlogDetailsComponent } from "./components/blog-details/blog-details.com
 
 const routes: Routes = [
     { path: "", component: HomeTwoComponent },
-    { path: "home-one", component: HomeOneComponent },
-    { path: "home-three", component: HomeThreeComponent },
-    { path: "home-four", component: HomeFourComponent },
-    { path: "home-five", component: HomeFiveComponent },
-    { path: "home-six", component: HomeSixComponent },
-    { path: "home-seven", component: HomeSevenComponent },
-    { path: "home-eight", component: HomeEightComponent },
-    { path: "home-nine", component: HomeNineComponent },
-    { path: "home-ten", component: HomeTenComponent },
-    { path: "home-eleven", component: HomeElevenComponent },
-    { path: "home-twelve", component: HomeTwelveComponent },
-    { path: "home-thirteen", component: HomeThirteenComponent },
-    { path: "blog-details", component: BlogDetailsComponent },
+    // { path: "home-one", component: HomeOneComponent },
+    // { path: "home-three", component: HomeThreeComponent },
+    // { path: "home-four", component: HomeFourComponent },
+    // { path: "home-five", component: HomeFiveComponent },
+    // { path: "home-six", component: HomeSixComponent },
+    // { path: "home-seven", component: HomeSevenComponent },
+    // { path: "home-eight", component: HomeEightComponent },
+    // { path: "home-nine", component: HomeNineComponent },
+    // { path: "home-ten", component: HomeTenComponent },
+    // { path: "home-eleven", component: HomeElevenComponent },
+    // { path: "home-twelve", component: HomeTwelveComponent },
+    // { path: "home-thirteen", component: HomeThirteenComponent },
+    { path: "blog-details/:expKey", component: BlogDetailsComponent },
     // Here add new pages component
 
-    { path: "**", component: HomeOneComponent }, // This line will remain down from the whole pages component list
+    { path: "**", component: HomeTwoComponent }, // This line will remain down from the whole pages component list
 ];
 
 @NgModule({

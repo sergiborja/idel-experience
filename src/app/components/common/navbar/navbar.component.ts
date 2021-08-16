@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ViewportScroller } from "@angular/common";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
     selector: "app-navbar",
@@ -7,7 +8,10 @@ import { ViewportScroller } from "@angular/common";
     styleUrls: ["./navbar.component.scss"],
 })
 export class NavbarComponent implements OnInit {
-    constructor(private viewportScroller: ViewportScroller) {}
+    constructor(
+        private viewportScroller: ViewportScroller,
+        private router: Router
+    ) {}
 
     public index = [
         { text: "Inicio", anchor: "home" },
@@ -17,7 +21,15 @@ export class NavbarComponent implements OnInit {
     ];
 
     public onClick(elementId: string): void {
-        this.viewportScroller.scrollToAnchor(elementId);
+        if (!this.router.url.includes("blog-details")) {
+            this.viewportScroller.scrollToAnchor(elementId);
+        } else {
+            this.router.navigate(["/"]);
+
+            setTimeout(() => {
+                this.viewportScroller.scrollToAnchor(elementId);
+            }, 500);
+        }
     }
 
     ngOnInit() {}

@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
-  selector: 'app-blog-details',
-  templateUrl: './blog-details.component.html',
-  styleUrls: ['./blog-details.component.scss']
+    selector: "app-blog-details",
+    templateUrl: "./blog-details.component.html",
+    styleUrls: ["./blog-details.component.scss"],
 })
 export class BlogDetailsComponent implements OnInit {
+    constructor(private route: ActivatedRoute) {}
 
-  constructor() { }
+    public expKey: string;
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+        this.expKey = this.route.snapshot.params["expKey"];
+    }
 
+    public changeExp(expKey: string) {
+        this.expKey = expKey;
+    }
 }
