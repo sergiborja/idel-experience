@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+    apiUrl: "https://ideal-experience-api.herokuapp.com/api/v1",
+    production: true,
 };
