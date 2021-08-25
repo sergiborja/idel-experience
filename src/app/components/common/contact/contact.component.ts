@@ -17,6 +17,9 @@ export class ContactComponent implements OnInit {
         this.viewportScroller.scrollToAnchor(elementId);
     }
 
+    public mailSentSuccess = false;
+    public mailSentError = false;
+
     ngOnInit() {}
 
     async submit(form) {
@@ -29,7 +32,7 @@ export class ContactComponent implements OnInit {
 
         this.contact
             .sendMail(body)
-            .then((res) => console.log(res))
-            .catch((err) => console.log(err));
+            .then((res) => (this.mailSentSuccess = true))
+            .catch((err) => (this.mailSentError = true));
     }
 }
