@@ -11,7 +11,7 @@ export class BlogDetailsComponent implements OnInit {
 
     public expKey: string;
 
-    public experiences = ["trees", "london", "toros"];
+    public experiences = ["trees", "london", "toros", "nuevo-lujo"];
 
     ngOnInit() {
         this.expKey = this.route.snapshot.params["expKey"];

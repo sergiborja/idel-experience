@@ -597,6 +597,13 @@ Main Banner CSS
 .item-bg-two {
     background-image: url(assets/img/ldn_overview.jpeg);
 }
+.item-bg-three{
+    background-image: url(assets/img/experiencias/toros/ExperienciaTaurina.jpg);
+}
+.item-bg-four{
+    background-image: url(assets/img/experiencias/nuevo-lujo/IMG_8487.jpg);
+}
+
 .main-banner-text {
     position: relative;
     text-align: center;
@@ -2539,6 +2546,12 @@ Blog Area CSS
     }
     &.bg2 {
         background-image: url(assets/img/ldn_overview.jpeg);
+    }
+    &.bg3 {
+        background-image: url(assets/img/experiencias/toros/ExperienciaTaurina.jpg);
+    }
+    &.bg4 {
+        background-image: url(assets/img/experiencias/nuevo-lujo/mesapuesta.jpeg);
     }
     &:hover {
         &::before {
