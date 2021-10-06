@@ -1,0 +1,15 @@
+.change-exp-btn {
+    position: sticky !important;
+    bottom: 20px;
+    z-index: 99;
+}
+
+@media (max-width: 700px) {
+    .change-exp-btn {
+        div {
+            a {
+                padding: 10px 10px !important;
+            }
+        }
+    }
+}

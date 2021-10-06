@@ -22,10 +22,14 @@
                 <div class="col-lg-8 col-md-12">
                     <div class="blog-details">
                         <div class="article-img">
-                            <img
-                                src="assets/img/mini_cooper.webp"
-                                alt="blog-details"
-                            />
+                            <owl-carousel-o [options]="blogSlides">
+                                <ng-template
+                                    *ngFor="let src of londonSrc"
+                                    carouselSlide
+                                >
+                                    <img [src]="src" alt="" />
+                                </ng-template>
+                            </owl-carousel-o>
                         </div>
                         <div class="article-text">
                             <ul class="category">
@@ -156,8 +160,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-controls-buttons">
-                        <div (click)="changeExp()" class="controls-right">
+                    <div class="change-exp-btn post-controls-buttons">
+                        <div (click)="goToPrevExp()" class="controls-left">
+                            <a>
+                                <i class="fas fa-chevron-left"></i>
+                                Anterior experiencia
+                            </a>
+                        </div>
+                        <div (click)="goToNextExp()" class="controls-right">
                             <a
                                 >Siguiente experiencia
                                 <i class="fas fa-chevron-right"></i
@@ -194,10 +204,14 @@
                 <div class="col-lg-8 col-md-12">
                     <div class="blog-details">
                         <div class="article-img">
-                            <img
-                                src="assets/img/cabana_arbol.jpeg"
-                                alt="blog-details"
-                            />
+                            <owl-carousel-o [options]="blogSlides">
+                                <ng-template
+                                    *ngFor="let src of treesSrc"
+                                    carouselSlide
+                                >
+                                    <img [src]="src" alt="" />
+                                </ng-template>
+                            </owl-carousel-o>
                         </div>
                         <div class="article-text">
                             <ul class="category">
@@ -235,11 +249,11 @@
                                 Noia.
                             </p>
                             <p>
-                                El entorno y enclave es espectacular. 
-                                Si lo que quieres es escapar de la rutina, 
-                                desconectar, disfrutar de la naturaleza y 
-                                cargar pilas, es sin duda, la opción perfecta
-                                 e ideal para ti y los tuyos.
+                                El entorno y enclave es espectacular. Si lo que
+                                quieres es escapar de la rutina, desconectar,
+                                disfrutar de la naturaleza y cargar pilas, es
+                                sin duda, la opción perfecta e ideal para ti y
+                                los tuyos.
                             </p>
                             <blockquote class="blockquote">
                                 <p class="mb-0">
@@ -297,8 +311,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-controls-buttons">
-                        <div (click)="changeExp()" class="controls-right">
+                    <div class="change-exp-btn post-controls-buttons">
+                        <div (click)="goToPrevExp()" class="controls-left">
+                            <a>
+                                <i class="fas fa-chevron-left"></i>
+                                Anterior experiencia
+                            </a>
+                        </div>
+                        <div (click)="goToNextExp()" class="controls-right">
                             <a
                                 >Siguiente experiencia
                                 <i class="fas fa-chevron-right"></i
@@ -335,10 +355,14 @@
                 <div class="col-lg-8 col-md-12">
                     <div class="blog-details">
                         <div class="article-img">
-                            <img
-                                src="assets/img/experiencias/toros/IMG_7710.jpg"
-                                alt="blog-details"
-                            />
+                            <owl-carousel-o [options]="blogSlides">
+                                <ng-template
+                                    *ngFor="let src of torosSrc"
+                                    carouselSlide
+                                >
+                                    <img [src]="src" alt="" />
+                                </ng-template>
+                            </owl-carousel-o>
                         </div>
                         <div class="article-text">
                             <ul class="category">
@@ -349,47 +373,58 @@
                                 <li><a routerLink="/">Aventura</a></li>
                             </ul>
                             <h4 class="title">
-                                Si eres una persona que disfruta de la cultura española y del mundo taurino, 
-                                en IDEAL EXPERIENCE, hacemos tu sueño realidad.
-                                Vive sensaciones y sentimientos únicos rodeado de campo y naturaleza.
+                                Si eres una persona que disfruta de la cultura
+                                española y del mundo taurino, en IDEAL
+                                EXPERIENCE, hacemos tu sueño realidad. Vive
+                                sensaciones y sentimientos únicos rodeado de
+                                campo y naturaleza.
                             </h4>
                             <p>
-                                Conoce al toro bravo a escasos metros de distancia en su hábitat, 
-                                su vida y su alimentación de la mano del capataz de la finca privada, 
-                                situada a pocos kilómetros de Sevilla. Para ello, recorrerás la finca
-                                en un vehículo todo terreno 4x4, si sois un grupo reducido y en remolques 
-                                para grupos grandes, en los cuales podréis acceder a todos los rincones de la ganadería.
-
+                                Conoce al toro bravo a escasos metros de
+                                distancia en su hábitat, su vida y su
+                                alimentación de la mano del capataz de la finca
+                                privada, situada a pocos kilómetros de Sevilla.
+                                Para ello, recorrerás la finca en un vehículo
+                                todo terreno 4x4, si sois un grupo reducido y en
+                                remolques para grupos grandes, en los cuales
+                                podréis acceder a todos los rincones de la
+                                ganadería.
                             </p>
                             <p>
-                                En esta experiencia vip, uno de los grandes y más reconocidos toreros, 
-                                como es Francisco Rivera Ordoñez , te contará sus experiencias, 
-                                inquietudes y su manera de vencer al miedo delante del toro, 
-                                y mostrará con todo lujo de detalle los trajes de luces, 
-                                que ha utilizado en su carrera como torero, confeccionados
-                                 todos ellos por maestros de la alta costura.
+                                En esta experiencia vip, uno de los grandes y
+                                más reconocidos toreros, como es Francisco
+                                Rivera Ordoñez , te contará sus experiencias,
+                                inquietudes y su manera de vencer al miedo
+                                delante del toro, y mostrará con todo lujo de
+                                detalle los trajes de luces, que ha utilizado en
+                                su carrera como torero, confeccionados todos
+                                ellos por maestros de la alta costura.
                             </p>
                             <p>
-                                La finca cuenta con su plaza de toros, 
-                                donde la figura del toreo tentará a una becerra 
-                                de forma totalmente profesional y mostrará todos 
-                                los matices que implica esta prueba. Al igual que, 
-                                se explicará de forma detallada las partes de las 
-                                corridas de toros, siempre de forma práctica, 
-                                desarrollando actividades con el capote, carretón, 
-                                banderillas, muleta y tercio de varas.
+                                La finca cuenta con su plaza de toros, donde la
+                                figura del toreo tentará a una becerra de forma
+                                totalmente profesional y mostrará todos los
+                                matices que implica esta prueba. Al igual que,
+                                se explicará de forma detallada las partes de
+                                las corridas de toros, siempre de forma
+                                práctica, desarrollando actividades con el
+                                capote, carretón, banderillas, muleta y tercio
+                                de varas.
                             </p>
                             <p>
-                                En la misma finca se servirá un aperitivo y 
-                                comida con platos tradicionales y típicos de la zona, 
-                                siempre acompañado de Francisco Rivera, 
-                                el cual te explicará todas aquellas curiosidades y azañas del mundo del toro.
+                                En la misma finca se servirá un aperitivo y
+                                comida con platos tradicionales y típicos de la
+                                zona, siempre acompañado de Francisco Rivera, el
+                                cual te explicará todas aquellas curiosidades y
+                                azañas del mundo del toro.
                             </p>
                             <p>
-                                Sin duda alguna, será una experiencia que no olvidarás jamás, 
-                                y en la que aprenderás todo lo que siempre quisiste saber del mundo taurino, 
-                                toreando una vaquilla de la mano de un auténtico maestro del toreo y 
-                                siempre en un marco campestre sin igual.
+                                Sin duda alguna, será una experiencia que no
+                                olvidarás jamás, y en la que aprenderás todo lo
+                                que siempre quisiste saber del mundo taurino,
+                                toreando una vaquilla de la mano de un auténtico
+                                maestro del toreo y siempre en un marco
+                                campestre sin igual.
                             </p>
                             <div class="author-share">
                                 <div class="row align-items-center">
@@ -450,8 +485,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-controls-buttons">
-                        <div (click)="changeExp()" class="controls-right">
+                    <div class="change-exp-btn post-controls-buttons">
+                        <div (click)="goToPrevExp()" class="controls-left">
+                            <a>
+                                <i class="fas fa-chevron-left"></i>
+                                Anterior experiencia
+                            </a>
+                        </div>
+                        <div (click)="goToNextExp()" class="controls-right">
                             <a
                                 >Siguiente experiencia
                                 <i class="fas fa-chevron-right"></i
@@ -463,8 +504,9 @@
         </div>
     </div>
 </ng-container>
+
 <ng-container *ngIf="expKey === 'nuevo-lujo'">
-    <div class="page-title-area item-bg-four"> 
+    <div class="page-title-area item-bg-four">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
@@ -487,13 +529,17 @@
                 <div class="col-lg-8 col-md-12">
                     <div class="blog-details">
                         <div class="article-img">
-                            <img
-                                src="assets/img/experiencias/nuevo-lujo/IMG_8489.jpg"
-                                alt="blog-details"
-                            />
+                            <owl-carousel-o [options]="blogSlides">
+                                <ng-template
+                                    *ngFor="let src of newLuxSrc"
+                                    carouselSlide
+                                >
+                                    <img [src]="src" alt="" />
+                                </ng-template>
+                            </owl-carousel-o>
                         </div>
                         <div class="article-text">
-                            <ul class="category">   
+                            <ul class="category">
                                 <li><a routerLink="/">Cabañas</a></li>
                                 <li><a routerLink="/">Bosque</a></li>
                                 <li><a routerLink="/">Árboles</a></li>
@@ -501,42 +547,54 @@
                                 <li><a routerLink="/">Aventura</a></li>
                             </ul>
                             <h4 class="title">
-                                Los nuevos tiempos que estamos viviendo, 
-                                nos hacen valorar mucho más aquello que antes nos parecía normal, 
-                                cotidiano e incluso monótono.
-                                Lo que formaba “parte del paisaje” lo hemos anhelado de una forma sin precedentes.
+                                Los nuevos tiempos que estamos viviendo, nos
+                                hacen valorar mucho más aquello que antes nos
+                                parecía normal, cotidiano e incluso monótono. Lo
+                                que formaba “parte del paisaje” lo hemos
+                                anhelado de una forma sin precedentes.
                             </h4>
                             <p>
-                                El lujo es aquello que escasea en cada momento histórico concreto, 
-                                por ello pienso que hoy el nuevo lujo, es poder disfrutar de la naturaleza, 
-                                de la familia y amigos. Vivir momentos únicos que te enriquecen el ama y tu bienestar.
-
+                                El lujo es aquello que escasea en cada momento
+                                histórico concreto, por ello pienso que hoy el
+                                nuevo lujo, es poder disfrutar de la naturaleza,
+                                de la familia y amigos. Vivir momentos únicos
+                                que te enriquecen el ama y tu bienestar.
                             </p>
                             <p>
-                                IDEAL EXPERIENCE, te ofrece pasar una noche o fin de semana en plena naturaleza, 
-                                en la maravillosa isla de Mallorca. Sin duda alguna, una experiencia única e inolvidable.
-                                Esta experiencia es personalizada para ti, así que, si prefieres no viajar a la isla y hacerlo en una finca particular, 
-                                también se puede realizar.
+                                IDEAL EXPERIENCE, te ofrece pasar una noche o
+                                fin de semana en plena naturaleza, en la
+                                maravillosa isla de Mallorca. Sin duda alguna,
+                                una experiencia única e inolvidable. Esta
+                                experiencia es personalizada para ti, así que,
+                                si prefieres no viajar a la isla y hacerlo en
+                                una finca particular, también se puede realizar.
                             </p>
                             <p>
-                                Cenar en medio del bosque en un marco totalmente campestre e idílico, 
-                                siempre con productos locales y de temporada, es posible. 
-                                Podrás elegir entre distintos talleres y actividades, tanto diurnos como nocturnos.
+                                Cenar en medio del bosque en un marco totalmente
+                                campestre e idílico, siempre con productos
+                                locales y de temporada, es posible. Podrás
+                                elegir entre distintos talleres y actividades,
+                                tanto diurnos como nocturnos.
                             </p>
                             <p>
-                                La aventura culminará durmiendo en unas comodísimas tiendas de campaña, 
-                                100% impermeables y transpirables, con colchones visco elásticos y edredones 
-                                nórdicos de micro-fibra. Todas ellas iluminadas y decoradas, como si de Pinterest se tratara.
+                                La aventura culminará durmiendo en unas
+                                comodísimas tiendas de campaña, 100%
+                                impermeables y transpirables, con colchones
+                                visco elásticos y edredones nórdicos de
+                                micro-fibra. Todas ellas iluminadas y decoradas,
+                                como si de Pinterest se tratara.
                             </p>
                             <p>
-                                Motivos para vivir esta experiencia, ¡nos sobran!, celebrar un cumpleaños, escapar de la ciudad, 
-                                conectar con la naturaleza en estado puro o simplemente pasar un buen rato con los tuyos, 
-                                al son de una guitarra, velas y las estrellas. Un lujo que pone su énfasis en conectar con la vida.
+                                Motivos para vivir esta experiencia, ¡nos
+                                sobran!, celebrar un cumpleaños, escapar de la
+                                ciudad, conectar con la naturaleza en estado
+                                puro o simplemente pasar un buen rato con los
+                                tuyos, al son de una guitarra, velas y las
+                                estrellas. Un lujo que pone su énfasis en
+                                conectar con la vida.
                             </p>
                             <blockquote class="blockquote">
-                                <p class="mb-0">
-                                    Cenaras en plena naturaleza.
-                                </p>
+                                <p class="mb-0">Cenaras en plena naturaleza.</p>
                             </blockquote>
                             <div class="author-share">
                                 <div class="row align-items-center">
@@ -587,8 +645,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-controls-buttons">
-                        <div (click)="changeExp()" class="controls-right">
+                    <div class="change-exp-btn post-controls-buttons">
+                        <div (click)="goToPrevExp()" class="controls-left">
+                            <a>
+                                <i class="fas fa-chevron-left"></i>
+                                Anterior experiencia
+                            </a>
+                        </div>
+                        <div (click)="goToNextExp()" class="controls-right">
                             <a
                                 >Siguiente experiencia
                                 <i class="fas fa-chevron-right"></i
