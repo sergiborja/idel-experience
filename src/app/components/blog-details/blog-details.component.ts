@@ -18,7 +18,6 @@ export class BlogDetailsComponent implements OnInit {
     onPopState() {
         setTimeout(() => {
             this.expKey = this.route.snapshot.params["expKey"];
-            console.log(this.expKey);
         }, 20);
     }
 
