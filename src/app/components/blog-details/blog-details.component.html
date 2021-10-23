@@ -664,5 +664,154 @@
         </div>
     </div>
 </ng-container>
+<ng-container *ngIf="expKey === 'MemoriasdeAfrica'">
+    <div class="page-title-area item-bg-five">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="page-title-content">
+                        <h1>Memorias de Africa</h1>
+                        <ul>
+                            <li><a routerLink="/">Experiencias</a></li>
+                            <li><i class="fas fa-chevron-right"></i></li>
+                            <li class="active">CAZANDO POR AFRICA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-details-area ptb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="blog-details">
+                        <div class="article-img">
+                            <owl-carousel-o [options]="blogSlides">
+                                <ng-template
+                                    *ngFor="let src of newLuxSrc"
+                                    carouselSlide
+                                >
+                                    <img [src]="src" alt="" />
+                                </ng-template>
+                            </owl-carousel-o>
+                        </div>
+                        <div class="article-text">
+                            <ul class="category">
+                                <li><a routerLink="/">Animales</a></li>
+                                <li><a routerLink="/">Caza</a></li>
+                                <li><a routerLink="/">experiencia</a></li>
+                                <li><a routerLink="/">Africa</a></li>
+                                <li><a routerLink="/">Aventura</a></li>
+                            </ul>
+                            <h4 class="title">
+                                Quien vive la experiencia mágica de África, 
+                                queda cautivado de por vida. 
+                                Y quien todavía no la ha vivido, estarás de acuerdo conmigo que es un 
+                                sueño que tienes pendiente que se haga realidad. Como dijo Richard Mullin: 
+                                “ El único hombre al que envidio, es el hombre que aún no ha estado en África, 
+                                porque tiene mucho que esperar”
+
+                            </h4>
+                            <p>
+                                África es el continente más grande, tras Asia y América. 
+                                Por ello hay infinidad de destinos para escoger y disfrutar 
+                                de esta maravillosa aventura, que estamos seguros, te robará 
+                                el corazón.
+                            </p>
+                            <p>
+                                En Ideal Experience contamos con un experimentado equipo que lleva
+                                realizando experiencias más de 55 años. Cada persona busca su sueño, 
+                                escucharemos tus preferencias y organizaremos mano a mano lo que tengas en mente.
+                                Y claro está, también te asesoramos en las distintas actividades y aventuras 
+                                que ofrece este maravillo destino.
+                            </p>
+                            <p>
+                                Safaris fotográficos, también a caballo, safaris nómadas en tiendas de campaña 
+                                con todas las comodidades, hoteles de ensueño, atardeceres de piel de gallina, 
+                                noches iluminadas por las estrellas, que solo se ven en este lugar, sobrevolar 
+                                la sabana en globo y desayunar como en la auténtica película Memorias de África, 
+                                ver en primera fila la migración de los ñus y otros animales, estar a escasos metros 
+                                de todos los animales salvajes… un sin fin de momentos inolvidables que te prometo, 
+                                no lo olvidarás jamás.
+                            </p>
+                            <p>
+                                Tanzania, Kenia, Uganda, Namibia, Botswana, Ruanda, 
+                                te esperan para mostrarte todo lo que la madre de la 
+                                naturaleza tiene para ofrecer.
+                                Cuéntanos como es tu sueño africano y nosotros nos encargamos de que se haga realidad.
+                            </p>
+                            <p>CONTACTANOS</p>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Iras de caza por Africa</p>
+                            </blockquote>
+                            <div class="author-share">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="article-author">
+                                            <div class="author-img">
+                                                <img
+                                                    src="assets/img/client-avatar1.jpg"
+                                                    alt="client"
+                                                />
+                                            </div>
+                                            <div class="author-title">
+                                                <h4>Sandra Flores Bernes</h4>
+                                                <span
+                                                    >Fundadora de Ideal
+                                                    Experience Consulting</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="social-share">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    tooltip="Share on Facebook"
+                                                    ><i
+                                                        class="
+                                                            fab
+                                                            fa-facebook-f
+                                                        "
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.instagram.com/idl_experience/"
+                                                    target="_blank"
+                                                    tooltip="Share on Instagram"
+                                                    ><i
+                                                        class="fab fa-instagram"
+                                                    ></i
+                                                ></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="change-exp-btn post-controls-buttons">
+                        <div (click)="goToPrevExp()" class="controls-left">
+                            <a>
+                                <i class="fas fa-chevron-left"></i>
+                                Anterior experiencia
+                            </a>
+                        </div>
+                        <div (click)="goToNextExp()" class="controls-right">
+                            <a>Siguiente experiencia
+                                <i class="fas fa-chevron-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
 
 <app-contact></app-contact>
