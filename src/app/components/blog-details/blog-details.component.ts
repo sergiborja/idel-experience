@@ -12,7 +12,7 @@ export class BlogDetailsComponent implements OnInit {
 
     public expKey: string;
 
-    public experiences = ["trees", "london", "toros", "nuevo-lujo"];
+    public experiences = ["trees", "london", "toros", "nuevo-lujo", "africa"];
 
     @HostListener("window:popstate", ["$event"])
     onPopState() {
