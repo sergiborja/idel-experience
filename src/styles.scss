@@ -595,16 +595,16 @@ Main Banner CSS
     background-image: url(assets/img/entre_arboles_wall.jpeg);
 }
 .item-bg-two {
-    background-image: url(assets/img/ldn_overview.jpeg);
+    background-image: url(assets/img/experiencias/london/COCHESLONDRESEXPERIENCIA4[3631].jpeg);
 }
-.item-bg-three {
+.item-bg-three{
     background-image: url(assets/img/experiencias/toros/ExperienciaTaurina.jpg);
 }
-.item-bg-four {
+.item-bg-four{
     background-image: url(assets/img/experiencias/nuevo-lujo/IMG_8487.jpg);
 }
-.item-bg-five {
-    background-image: url(assets/img/experiencias/Africa/exibid_685.jpg);
+.item-bg-five{
+    background-image: url(assets/img/experiencias/Africa/adventure-safaris.jpg);
 }
 
 .main-banner-text {
@@ -630,7 +630,7 @@ Main Banner CSS
             size: 55px;
         }
         span {
-            color: #9fa659;
+            color: #9FA659;
             font-weight: 600;
         }
         ngx-typed-js {
@@ -2557,7 +2557,7 @@ Blog Area CSS
         background-image: url(assets/img/experiencias/nuevo-lujo/mesapuesta.jpeg);
     }
     &.bg5 {
-        background-image: url(assets/img/experiencias/Africa/exibid_11a.jpg);
+        background-image: url(assets/img/experiencias/Africa/exibid_880.jpg);
     }
     &:hover {
         &::before {

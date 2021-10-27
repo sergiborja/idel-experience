@@ -12,7 +12,7 @@ export class BlogDetailsComponent implements OnInit {
 
     public expKey: string;
 
-    public experiences = ["trees", "london", "toros", "nuevo-lujo", "africa"];
+    public experiences = ["trees", "london", "toros", "nuevo-lujo", "Africa"];
 
     @HostListener("window:popstate", ["$event"])
     onPopState() {
@@ -89,6 +89,7 @@ export class BlogDetailsComponent implements OnInit {
     ];
 
     public africaSrc = [
+        "../../../assets/img/experiencias/Africa/adventure-safaris.jpg",
         "../../../assets/img/experiencias/Africa/exibid_1.jpg",
         "../../../assets/img/experiencias/Africa/exibid_11a.jpg",
         "../../../assets/img/experiencias/Africa/exibid_37.jpg",
@@ -106,7 +107,7 @@ export class BlogDetailsComponent implements OnInit {
     ];
 
     public londonSrc = [
-        "../../../assets/img/experiencias/london/COCHES LONDRES EXPERIENCIA 1[3630].jpeg",
+        //"../../../assets/img/experiencias/london/COCHES LONDRES EXPERIENCIA 1[3630].jpeg",
         "../../../assets/img/experiencias/london/COCHES LONDRES EXPERIENCIA 3[3633].jpeg",
         "../../../assets/img/experiencias/london/COCHES LONDRES EXPERIENCIA 7[3632].jpeg",
         "../../../assets/img/experiencias/london/COCHES LONDRES EXPERIENCIA 2[3634].jpeg",
