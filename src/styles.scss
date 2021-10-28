@@ -2528,9 +2528,7 @@ Blog Area CSS
         a {
             display: inline-block;
 
-            &:hover {
-                color: var(--mainColor) !important;
-            }
+            color: var(--mainColor) !important;
         }
     }
     .link-btn {
@@ -2559,20 +2557,18 @@ Blog Area CSS
     &.bg5 {
         background-image: url(assets/img/experiencias/Africa/exibid_11a.jpg);
     }
-    &:hover {
-        &::before {
-            background: var(--blackColor);
-            opacity: 0.66;
-        }
-        span,
-        p,
-        h3 a {
-            color: var(--whiteColor);
-        }
-        .link-btn {
-            background: var(--mainColor);
-            color: var(--whiteColor);
-        }
+    &::before {
+        background: var(--blackColor);
+        opacity: 0.66;
+    }
+    span,
+    p,
+    h3 a {
+        color: var(--whiteColor);
+    }
+    .link-btn {
+        background: var(--mainColor);
+        color: var(--whiteColor);
     }
 }
 
@@ -2925,6 +2921,9 @@ Blog Details Area CSS
         }
         .article-author {
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             .author-img {
                 float: left;

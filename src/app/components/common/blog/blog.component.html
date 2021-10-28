@@ -8,92 +8,83 @@
         <div class="blog-slides">
             <owl-carousel-o [options]="blogSlides">
                 <ng-template carouselSlide>
-                    <div class="single-blog-item bg1">
+                    <div
+                        (click)="nav('/blog-details/trees')"
+                        class="single-blog-item bg1"
+                    >
                         <span>Aventura</span>
                         <h3>
-                            <a routerLink="/blog-details/trees"
-                                >DURMIENDO ENTRE ARBOLES</a
-                            >
+                            <a>DURMIENDO ENTRE ARBOLES</a>
                         </h3>
                         <p>
                             ¿Cuántas veces de niño has soñado en dormir en una
                             cabaña encima de un árbol?
                         </p>
-                        <a
-                            routerLink="/blog-details/trees"
-                            title="Read More"
-                            class="link-btn"
+                        <a title="Read More" class="link-btn"
                             ><i class="fas fa-arrow-right"></i
                         ></a>
                     </div>
                 </ng-template>
+
                 <ng-template carouselSlide>
-                    <div class="single-blog-item bg2">
+                    <div
+                        (click)="nav('/blog-details/london')"
+                        class="single-blog-item bg2"
+                    >
                         <span>Viaje</span>
                         <h3>
-                            <a routerLink="/blog-details/london"
-                                >LONDON EXPERIENCE</a
-                            >
+                            <a>LONDON EXPERIENCE</a>
                         </h3>
                         <p>
                             ¿Quieres subirte en un Classic Mini Cooper para
                             recorrer todas las calles de Londres?
                         </p>
-                        <a
-                            routerLink="/blog-details/london"
-                            title="Read More"
-                            class="link-btn"
+                        <a title="Read More" class="link-btn"
                             ><i class="fas fa-arrow-right"></i
                         ></a>
                     </div>
                 </ng-template>
                 <ng-template carouselSlide>
-                    <div class="single-blog-item bg3">
+                    <div
+                        (click)="nav('/blog-details/toros')"
+                        class="single-blog-item bg3"
+                    >
                         <span>Toros</span>
                         <h3>
-                            <a routerLink="/blog-details/toros"
-                                >EXPERIENCIA TAURINA</a
-                            >
+                            <a>EXPERIENCIA TAURINA</a>
                         </h3>
                         <p><br />Capote en mano<br /></p>
-                        <a
-                            routerLink="/blog-details/toros"
-                            title="Read More"
-                            class="link-btn"
+                        <a title="Read More" class="link-btn"
                             ><i class="fas fa-arrow-right"></i
                         ></a>
                     </div>
                 </ng-template>
                 <ng-template carouselSlide>
-                    <div class="single-blog-item bg4">
+                    <div
+                        (click)="nav('/blog-details/nuevo-lujo')"
+                        class="single-blog-item bg4"
+                    >
                         <span>Nuevo-Lujo</span>
                         <h3>
-                            <a routerLink="/blog-details/nuevo-lujo"
-                                >EL NUEVO LUJO</a
-                            >
+                            <a>EL NUEVO LUJO</a>
                         </h3>
                         <p><br />Cena en medio de la naturaleza<br /></p>
-                        <a
-                            routerLink="/blog-details/nuevo-lujo"
-                            title="Read More"
-                            class="link-btn"
+                        <a title="Read More" class="link-btn"
                             ><i class="fas fa-arrow-right"></i
                         ></a>
                     </div>
                 </ng-template>
                 <ng-template carouselSlide>
-                    <div class="single-blog-item bg5">
+                    <div
+                        (click)="nav('/blog-details/africa')"
+                        class="single-blog-item bg5"
+                    >
                         <span>Memorias de África</span>
                         <h3>
-                            <a routerLink="/blog-details/africa"
-                                >MEMORIAS DE ÁFRICA</a
-                            >
+                            <a>MEMORIAS DE ÁFRICA</a>
                         </h3>
                         <p><br />Vive un safari en África<br /></p>
-                        <a
-                            routerLink="/blog-details/africa"
-                            title="Read More"
-                            class="link-btn"
+                        <a title="Read More" class="link-btn"
                             ><i class="fas fa-arrow-right"></i
                         ></a>
                     </div>
