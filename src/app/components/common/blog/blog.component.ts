@@ -22,6 +22,8 @@ export class BlogComponent implements OnInit {
 
     blogSlides: OwlOptions = {
         loop: true,
+        touchDrag: true,
+        mouseDrag: false,
         nav: false,
         dots: true,
         autoplayHoverPause: true,
