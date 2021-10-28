@@ -89,6 +89,7 @@ export class BlogDetailsComponent implements OnInit {
     ];
 
     public africaSrc = [
+        "../../../assets/img/experiencias/Africa/adventure-safaris.jpg",
         "../../../assets/img/experiencias/Africa/exibid_1.jpg",
         "../../../assets/img/experiencias/Africa/exibid_11a.jpg",
         "../../../assets/img/experiencias/Africa/exibid_37.jpg",
