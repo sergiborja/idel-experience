@@ -65,7 +65,7 @@ export class BlogDetailsComponent implements OnInit {
         items: 1,
         autoHeight: true,
         smartSpeed: 750,
-        autoplay: true,
+        autoplay: false,
         navText: [
             "<i class='fa fa-angle-left'></i>",
             "<i class='fa fa-angle-right'></i>",

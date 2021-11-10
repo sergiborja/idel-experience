@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { OwlOptions } from "ngx-owl-carousel-o";
 import { ViewportScroller } from "@angular/common";
+import { Router } from "@angular/router";
 
 @Component({
     selector: "app-home-two",
@@ -8,10 +9,10 @@ import { ViewportScroller } from "@angular/common";
     styleUrls: ["./home-two.component.scss"],
 })
 export class HomeTwoComponent implements OnInit {
-    constructor(private viewportScroller: ViewportScroller) {}
+    constructor(private router: Router) {}
 
     public onClick(elementId: string): void {
-        this.viewportScroller.scrollToAnchor(elementId);
+        this.router.navigate([`blog-details/${elementId}`]);
     }
 
     ngOnInit() {}
