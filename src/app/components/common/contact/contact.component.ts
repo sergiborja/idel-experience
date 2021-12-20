@@ -32,7 +32,18 @@ export class ContactComponent implements OnInit {
 
         this.contact
             .sendMail(body)
-            .then((res) => (this.mailSentSuccess = true))
+            .then((res) => {
+                this.mailSentSuccess = true;
+                this.clearForm();
+            })
             .catch((err) => (this.mailSentError = true));
+    }
+
+    private clearForm() {
+        const formControls = document.getElementsByClassName("form-control");
+
+        for (let i = 0; i < formControls.length; ++i) {
+            formControls[i]["value"] = "";
+        }
     }
 }
